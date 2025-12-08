@@ -42,26 +42,14 @@
 
 //-------------------------------------------------------------------------
 
- //   let ul = document.createElement("ul");
-  //  let li1 = document.createElement("li");
-  //  let li2 = document.createElement("li");
-   // let li3 = document.createElement("li");
-  //  let li4 = document.createElement("li");
-   // let li5 = document.createElement("li");
-
-   // li1.innerText="Kishore";
-   // li2.innerText="Suresh";
-   // li3.innerText="Manoj";
-   // li4.innerText="Sairam";
-   // li5.innerText="Nagesh";
-
-   // ul.appendChild(li1);
-    // ul.appendChild(li2);
-    // ul.appendChild(li3);
-    // ul.appendChild(li4);
-    // ul.appendChild(li5);
-
-    // document.body.appendChild(ul);
+// let ul = document.createElement("ul");
+// let names = ["Kishore","Suresh","Manoj","Sairam","Nagesh"];
+// for(let n in names) {
+//     let li = document.createElement("li");
+//     li.innerText=names[n];
+//     ul.appendChild(li);
+// }
+// document.body.appendChild(ul);
 
 //-------------------------------------------------------------------------
 
@@ -84,30 +72,27 @@
 
 //--------------------------------------------------------------------------
 
-      //  let table = document.createElement("table");
-      //  let tr = document.createElement("tr");
-     //   let td1 = document.createElement("td");
-      //  let td2 = document.createElement("td");
-      //  let td3 = document.createElement("td");
-      //  td1.innerText="Kishore";
-      //  td2.innerText="Suresh";
-      //  td3.innerText="Manoj";
-     //   tr.appendChild(td1);
-      //  tr.appendChild(td2);
-      //  tr.appendChild(td3);
-      //  table.appendChild(tr);
-      //  document.body.appendChild(table);
+    let table = document.createElement("table");
+    let tr = document.createElement("tr");
+    let names = ["Kishore","Suresh","Manoj"];
+    for(let n in names) {
+        let td = document.createElement("td");
+        td.innerText=names[n];
+        tr.appendChild(td);
+    }
+    table.appendChild(tr);
+    document.body.appendChild(table);
 
  //---------------------------------------------------------------------------
 
-        let div = document.createElement("div");
-        let names = ["Kishore","Suresh","Manoj","Nagesh","Sairam"];
-        for(let n in names) {
-            let button = document.createElement("button");
-            button.innerText = names[n];
-            div.appendChild(button);
-        }
-        document.body.appendChild(div);
+     //   let div = document.createElement("div");
+     //   let names = ["Kishore","Suresh","Manoj","Nagesh","Sairam"];
+     //   for(let n in names) {
+      //      let button = document.createElement("button");
+     //       button.innerText = names[n];
+     //       div.appendChild(button);
+     //   }
+     //   document.body.appendChild(div);
 
     </script>
 </body>
