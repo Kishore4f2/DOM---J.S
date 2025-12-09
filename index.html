@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <div id="ID" class="Name"></div>
 </head>
 <body>
     <script>
@@ -72,16 +73,16 @@
 
 //--------------------------------------------------------------------------
 
-    let table = document.createElement("table");
-    let tr = document.createElement("tr");
-    let names = ["Kishore","Suresh","Manoj"];
-    for(let n in names) {
-        let td = document.createElement("td");
-        td.innerText=names[n];
-        tr.appendChild(td);
-    }
-    table.appendChild(tr);
-    document.body.appendChild(table);
+  //  let table = document.createElement("table");
+  //  let tr = document.createElement("tr");
+    //let names = ["Kishore","Suresh","Manoj"];
+   // for(let n in names) {
+     //   let td = document.createElement("td");
+       // td.innerText=names[n];
+        //tr.appendChild(td);
+   // }
+   // table.appendChild(tr);
+    //document.body.appendChild(table);
 
  //---------------------------------------------------------------------------
 
@@ -93,6 +94,65 @@
      //       div.appendChild(button);
      //   }
      //   document.body.appendChild(div);
+
+//---------------------------------------------------------------------------
+
+
+    // let arr = [{"id":"1"},{"id":"2"},{"id":"3"},{"id":"4"}];
+    // let div = document.createElement("div");
+    // for(let i in arr) {
+    //    let p  = document.createElement("p");
+    //    p.innerHTML="<i>ID : " + arr[i].id + "</i>";
+    //    div.appendChild(p);
+    // }
+    // document.body.appendChild(div);
+
+//---------------------------------------------------------------------------
+             
+    //-----------------Fetching ID's using For-in-------------------
+        // let arr = [{"id":"1"},{"id":"2"},{"id":"3"},{"id":"4"}]
+        // let div = document.createElement("div")
+        // for(let i in arr) {
+        //     let p = document.createElement("p")
+        //     p.innerText = "ID : "+arr[i].id 
+        //     div.appendChild(p)
+        // }
+        // document.body.appendChild(div)
+
+    //-----------------Fetching ID's using ForEach-------------------
+        // let arr = [{"id":"1"},{"id":"2"},{"id":"3"},{"id":"4"}]
+        // let div = document.createElement("div")
+        // arr.forEach(ele=>{
+        //     let p = document.createElement("p")
+        //     p.innerHTML = <p>ID : ${ele.id}</p>
+        //     div.appendChild(p);          
+        // })
+        // document.body.appendChild(div)
+    
+    //-----------------Fetching Names using ForEach-------------------
+        //  let names = ["Suresh","Kishore","Manoj","Vinay","Durgarao"];
+        //  names.forEach(ele=>{
+        //       let div = document.createElement("div")
+        //       div.innerHTML = <p> <b>Names :</b> <i>${ele}<i/></p>
+        //       document.body.appendChild(div);
+        //  });
+    //-------------------getElementById Method-----------------------------
+            // let data = ["Suresh","Kishore","Manoj","Vinay","Durgarao"];
+            // let div1 = document.getElementById("ID")
+            // data.forEach(ele=>{
+            //     let p = document.createElement("p")
+            //     p.innerHTML = ele
+            //     div1.appendChild(p)
+            // });
+    //-------------------getElementsByClassName Method---------------------
+            let data = ["Suresh","Kishore","Manoj","Vinay","Durgarao"];
+            let div1 = document.getElementsByClassName("Name")[0]
+            data.forEach(ele=>{
+                let p = document.createElement("p")
+                p.innerHTML = ele
+                div1.appendChild(p)
+            });
+
 
     </script>
 </body>
